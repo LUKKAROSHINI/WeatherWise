@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherRise - Promo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Top Right Buttons -->
+    <div class="top-right-buttons">
+        <a href="login.html" class="btn">Login</a>
+        <a href="register.html" class="btn">Register</a>
+    </div>
+
+    <!-- Promo Animation -->
+    <div class="promo-container">
+        <h1 class="title">WeatherRise</h1>
+        <p class="tagline">Bringing You the Forecast Like Never Before</p>
+        <div class="weather-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather Icon">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.to(".title", { duration: 1, opacity: 1, y: -20, ease: "power2.out" });
+            gsap.to(".tagline", { duration: 1.2, opacity: 1, y: -10, delay: 0.5, ease: "power2.out" });
+            gsap.to(".weather-icon img", { duration: 1.5, opacity: 1, scale: 1, delay: 1, ease: "elastic.out(1, 0.5)" });
+        });
+    </script>
+
+</body>
+</html>

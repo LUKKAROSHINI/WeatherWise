@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Deep blue sky gradient */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Right Buttons */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Light blue gradient */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Darker blue */
+    transform: scale(1.1);
+}
+
+/* Enlarged Promo Container */
+.promo-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px 12px rgba(255, 255, 255, 0.6);
+}
+
+.tagline {
+    font-size: 24px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Weather Icon Animation */
+.weather-icon img {
+    width: 180px;
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+/* Form Containers */
+.form-container {
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    width: 90%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* Weather Dashboard */
+.dashboard-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#cityInput {
+    width: 85%;
+    padding: 14px;
+    font-size: 1.2rem;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 14px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+    transform: scale(1.1);
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
